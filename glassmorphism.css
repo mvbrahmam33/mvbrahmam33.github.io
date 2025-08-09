@@ -1,11 +1,11 @@
 /* Optimized glassmorphism card with CSS variables */
 .glass-card {
-  --blur-value: 20px;
-  --refraction: 0.15;
+  --blur-value: 10px;
+  --refraction: 0.05;
   --depth: 10px;
   --border-radius: 20px;
   
-  width: 240px;
+  width: 290px;
   height: 360px;
   background: rgba(255, 255, 255, var(--refraction));
   backdrop-filter: blur(var(--blur-value)) saturate(1.2);
@@ -25,9 +25,9 @@
   cursor: pointer;
 }
 
+
 /* Border gradient and highlight effects */
-.glass-card::before,
-.glass-card-enhanced::before {
+.glass-card::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -44,8 +44,7 @@
   pointer-events: none;
 }
 
-.glass-card::after,
-.glass-card-enhanced::after {
+.glass-card::after {
   content: '';
   position: absolute;
   top: 0;
@@ -57,8 +56,7 @@
 }
 
 /* Hover effects */
-.glass-card:hover,
-.glass-card-enhanced:hover {
+.glass-card:hover {
   transform: translateY(-10px);
   box-shadow: 
     0 25px 60px rgba(0, 0, 0, 0.25),
@@ -68,8 +66,7 @@
 }
 
 /* Inner glow effect */
-.glass-card .inner-glow,
-.glass-card-enhanced .inner-glow {
+.glass-card .inner-glow{
   position: absolute;
   inset: 1px;
   border-radius: calc(var(--border-radius) - 1px);
@@ -81,8 +78,7 @@
 }
 
 /* Radial glow overlay */
-.glass-card .radial-glow,
-.glass-card-enhanced .radial-glow {
+.glass-card .radial-glow {
   position: absolute;
   inset: 2px;
   border-radius: calc(var(--border-radius) - 2px);
@@ -92,8 +88,7 @@
 }
 
 /* Left edge highlight */
-.glass-card .left-highlight,
-.glass-card-enhanced .left-highlight {
+.glass-card .left-highlight{
   position: absolute;
   top: 10%;
   left: 0;
@@ -104,8 +99,7 @@
 }
 
 /* Glass card content styles */
-.glass-card h3,
-.glass-card-enhanced h3 {
+.glass-card h3{
   color: white;
   font-size: 1.5rem;
   margin-bottom: 15px;
@@ -113,24 +107,21 @@
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.glass-card p,
-.glass-card-enhanced p {
+.glass-card p {
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.6;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.glass-card .icon,
-.glass-card-enhanced .icon {
+.glass-card .icon{
   font-size: 3rem;
   text-align: center;
   margin-bottom: 20px;
   opacity: 0.8;
 }
 
-.glass-card .button,
-.glass-card-enhanced .button {
+.glass-card .button {
   display: inline-block;
   padding: 12px 24px;
   background: rgba(255, 255, 255, 0.2);
@@ -145,8 +136,7 @@
   box-sizing: border-box;
 }
 
-.glass-card .button:hover,
-.glass-card-enhanced .button:hover {
+.glass-card .button:hover{
   background: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
 }
@@ -182,7 +172,7 @@
     border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
   }
   to {
-    transform: translate(500px, 100px) rotate(-10deg);
+    transform: translate(400px, 100px) rotate(-10deg);
     border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
   }
 }
