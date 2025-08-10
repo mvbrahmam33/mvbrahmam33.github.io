@@ -16,12 +16,28 @@
         <div class="shape"></div>
     </div>
 
-    <div class="container">
-        <div class="blob"></div>
-        <h1 class="demo-title">VEERA BRAHMAM</h1>
-        <p class="demo-subtitle">This is just test to build Portpolio and understanf html,css and javascripts</p>
+    <!-- New sticky glass header -->
+    <header class="glass-header">
+        <div class="profile">
+            <div class="avatar">VB</div>
+            <div class="info">
+                <h1>VEERA BRAHMAM</h1>
+                <p>Software Developer</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <div class="cards-grid">
+    
+    <div class="container" id="about">
+        <div class="blob"></div>
+        
+        <div class="cards-grid" id="projects">
             <div class="glass-card">
                 <div class="inner-glow"></div>
                 <div class="radial-glow"></div>
@@ -63,18 +79,37 @@
             </div>
         </div>
 
-        <div class="explanation">
-            <h2>🔍 How It Works</h2>
-            <ul>
-                <li><strong>Backdrop Filter:</strong> <code>backdrop-filter: blur(20px)</code> creates the frosted glass effect by blurring background content</li>
-                <li><strong>Semi-transparent Background:</strong> <code>rgba(255, 255, 255, 0.2)</code> provides subtle white overlay</li>
-                <li><strong>Multiple Box Shadows:</strong> Layered inset and outset shadows simulate glass depth and lighting</li>
-                <li><strong>Pseudo-elements:</strong> <code>::before</code> and <code>::after</code> add realistic light reflections on glass edges</li>
-                <li><strong>Border & Radius:</strong> Subtle borders and rounded corners complete the modern glass aesthetic</li>
-                <li><strong>Hover Effects:</strong> Transform and shadow changes provide interactive feedback</li>
-            </ul>
-        </div>
+
         
     </div>
+
+    <!-- Additional sections for navigation targets -->
+    <section id="skills" class="section">
+        <div class="section-inner">
+            <h2>🛠️ Skills</h2>
+            <p>HTML, CSS, JavaScript, React, Responsive UI, Animations, Accessibility.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-inner">
+            <h2>📬 Contact</h2>
+            <p>Reach out at: <a href="mailto:you@example.com">you@example.com</a></p>
+        </div>
+    </section>
+
+    <!-- Sticky shadow enhancer -->
+    <script>
+      (function(){
+        const header = document.querySelector('.glass-header');
+        if(!header) return;
+        const onScroll = () => {
+          if (window.scrollY > 10) header.classList.add('is-stuck');
+          else header.classList.remove('is-stuck');
+        };
+        document.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      })();
+    </script>
 </body>
 </html>
