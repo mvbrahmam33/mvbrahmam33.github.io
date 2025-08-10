@@ -141,6 +141,10 @@
   transform: translateY(-2px);
 }
 
+.cards-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 /* ========================================
    BLOB ANIMATIONS FOR BACKGROUNDS
    ======================================== */
@@ -190,7 +194,7 @@
 body {
   font-family: Arial, sans-serif;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background: linear-gradient(135deg, #33475a 0%, #2c6d69 50%, #349040 100%);
   position: relative;
   overflow-x: hidden;
 }
