@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portpolio Demo</title>
+    <title>Mandla Veera Brahmam - Portfolio</title>
     <link rel="stylesheet" href="glassmorphism.css">
-
 </head>
 <body>
     <!-- Bubbles which goes up and pops -->
@@ -19,7 +18,9 @@
     <!-- New sticky glass header -->
     <header class="glass-header">
         <div class="profile">
-            <div class="avatar">VB</div>
+            <div class="avatar">
+                <img src="assets/RickAndMortyIcon.png" alt="Mandla Veera Brahmam" width="64" height="64">
+            </div>
             <div class="info">
                 <h1>VEERA BRAHMAM</h1>
                 <p>Software Developer</p>
@@ -29,80 +30,198 @@
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
+            <a href="#achievements">Achievements</a>
             <a href="#contact">Contact</a>
+            <!-- Dark mode toggle button -->
+            <button id="themeToggle" class="theme-toggle" aria-pressed="false" title="Toggle dark mode" type="button">🌙</button>
         </nav>
     </header>
 
-    
     <div class="container">
-
         <div class="blob"></div>
+        
+        <!-- About Section -->
         <section id="about" class="section">
             <div class="section-inner">
-                <h2>🛠️ about</h2>
-                <p>H am an enthusiastic person to learn new technology and skills. i will learn new things which fascinates me. </p>
+                <h2>👨‍💻 About Me</h2>
+                <p>I am Mandla Veera Brahmam, a B.Tech Electrical Engineering student at NIT Surat with a passion for technology and programming. I believe in self-motivated learning and have built all my skills through documentation, online tutorials, and hands-on experimentation. My motto: <em>"I build what I need. I learn what I build."</em></p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🎯</span>
+                        <span>Self-Learner</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🔧</span>
+                        <span>Builder & Creator</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">💡</span>
+                        <span>Problem Solver</span>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- Projects Section -->
         <div class="cards-grid" id="projects">
             <div class="glass-card">
                 <div class="inner-glow"></div>
                 <div class="radial-glow"></div>
                 <div class="left-highlight"></div>
-                <div class="icon">🎨</div>
-                <h3>Design</h3>
-                <p>Beautiful glassmorphism effects create modern, elegant interfaces with subtle transparency and blur.</p>
-                <a href="#" class="button">Learn More</a>
-            </div>
-
-            <div class="glass-card">
-                <div class="inner-glow"></div>
-                <div class="radial-glow"></div>
-                <div class="left-highlight"></div>
                 <div class="icon">💻</div>
-                <h3>Development</h3>
-                <p>CSS backdrop-filter and layered shadows combine to create realistic glass panel effects.</p>
-                <a href="#" class="button">View Code</a>
-            </div>
-
-            <div class="glass-card" >
-                <div class="inner-glow"></div>
-                <div class="radial-glow"></div>
-                <div class="left-highlight"></div>
-                <div class="icon">🚀</div>
-                <h3>Enhanced</h3>
-                <p>Customizable CSS variables allow real-time control over blur, refraction, and depth values.</p>
-                <a href="#" class="button">Customize</a>
+                <h3>Custom Rainmeter Skin</h3>
+                <p>Developed a Rainmeter skin with glassy UI that displays synced mobile tasks and unread emails on desktop.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">PowerShell</span>
+                    <span class="tech-tag">cURL</span>
+                </div>
+                <a href="https://github.com/mvbrahmam33/" class="button" target="_blank">View on GitHub</a>
             </div>
 
             <div class="glass-card">
                 <div class="inner-glow"></div>
                 <div class="radial-glow"></div>
                 <div class="left-highlight"></div>
-                <div class="icon">📱</div>
-                <h3>Responsive</h3>
-                <p>Fully responsive design adapts to all screen sizes while maintaining visual consistency.</p>
-                <a href="#" class="button">Test Mobile</a>
+                <div class="icon">🎵</div>
+                <h3>NCS Visualizer</h3>
+                <p>Built an audio visualizer using C++ and SFML that reacts dynamically to live music playback.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">SFML</span>
+                    <span class="tech-tag">OpenCV</span>
+                </div>
+                <a href="https://github.com/mvbrahmam33/NCSVisualizerInCPP" class="button" target="_blank">View Project</a>
+            </div>
+
+            <div class="glass-card">
+                <div class="inner-glow"></div>
+                <div class="radial-glow"></div>
+                <div class="left-highlight"></div>
+                <div class="icon">👤</div>
+                <h3>Face Detection & Recognition</h3>
+                <p>Real-time application in Java using OpenCV for detecting and recognizing multiple users with custom datasets.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">Machine Learning</span>
+                </div>
+                <a href="https://github.com/mvbrahmam33/FaceDetectionAndRecognition" class="button" target="_blank">Explore Code</a>
             </div>
         </div>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-inner">
+                <h2>🛠️ Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PowerShell</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">VSCode</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">CMake</span>
+                            <span class="skill-tag">Make</span>
+                            <span class="skill-tag">vcpkg</span>
+                            <span class="skill-tag">MinGW-g++</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Libraries & Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">SFML</span>
+                            <span class="skill-tag">cURL</span>
+                            <span class="skill-tag">ImageMagick</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Core Competencies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">DSA</span>
+                            <span class="skill-tag">OOP</span>
+                            <span class="skill-tag">System Scripting</span>
+                            <span class="skill-tag">GUI Development</span>
+                            <span class="skill-tag">Real-Time Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="section-inner">
+                <h2>🏆 Achievements & Positions</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <h3>🔬 Navodaya Science Competition</h3>
+                        <p>Reached Regional Level after Cluster Victory by building a text desktop assistant</p>
+                        <span class="year">2018</span>
+                    </div>
+                    <div class="achievement-card">
+                        <h3>👨‍💻 Junior Developer - GDSC NIT Surat</h3>
+                        <p>Google Developer Student Club</p>
+                        <span class="year">2023 - Present</span>
+                    </div>
+                    <div class="achievement-card">
+                        <h3>🎯 Executive Member - ACM Student Chapter</h3>
+                        <p>Association for Computing Machinery, NIT Surat</p>
+                        <span class="year">2023 - Present</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-inner">
+                <h2>📬 Contact</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>+91-7386729773</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <a href="mailto:timetotraveltotime@email.com">timetotraveltotime@email.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🎓</span>
+                        <a href="mailto:u22ee082@eed.svnit.ac.in">u22ee082@eed.svnit.ac.in</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💻</span>
+                        <a href="https://github.com/mvbrahmam33" target="_blank">GitHub: mvbrahmam33</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        <a href="https://www.linkedin.com/in/brahmam33/" target="_blank">LinkedIn: brahmam33</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🌍</span>
+                        <span>Telugu (Native), English (Fluent), Hindi (Proficient)</span>
+                    </div>
+                </div>
+                <div class="quote">
+                    <p><em>"I build what I need. I learn what I build."</em></p>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <!-- Additional sections for navigation targets -->
-    <section id="skills" class="section">
-        <div class="section-inner">
-            <h2>🛠️ Skills</h2>
-            <p>HTML, CSS, JavaScript, React, Responsive UI, Animations, Accessibility.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="section-inner">
-            <h2>📬 Contact</h2>
-            <p>Reach out at: <a href="mailto:you@example.com">you@example.com</a></p>
-        </div>
-    </section>
-
-    <!-- Sticky shadow enhancer -->
+    <!-- Sticky shadow enhancer + Dark mode toggle -->
     <script>
       (function(){
         const header = document.querySelector('.glass-header');
@@ -113,6 +232,52 @@
         };
         document.addEventListener('scroll', onScroll, { passive: true });
         onScroll();
+
+        // Dark mode toggle functionality
+        const toggleBtn = document.getElementById('themeToggle');
+        if (toggleBtn) {
+          const applyTheme = (isDark) => {
+            document.body.classList.toggle('dark-mode', isDark);
+            toggleBtn.setAttribute('aria-pressed', String(isDark));
+            toggleBtn.textContent = isDark ? '☀️' : '🌙';
+            toggleBtn.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+          };
+
+          // Check for saved theme or default to light
+          const savedTheme = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const isDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
+          
+          applyTheme(isDark);
+
+          // Toggle on click
+          toggleBtn.addEventListener('click', () => {
+            const newIsDark = !document.body.classList.contains('dark-mode');
+            localStorage.setItem('theme', newIsDark ? 'dark' : 'light');
+            applyTheme(newIsDark);
+          });
+        }
+
+        // Blob hover effect - works even when blob is behind other elements
+        const blob = document.querySelector('.blob');
+        if (blob) {
+          // Add mousemove listener to the entire body for better coverage
+          document.body.addEventListener('mousemove', (e) => {
+            const rect = blob.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            const distance = Math.sqrt(
+              Math.pow(e.clientX - centerX, 2) + Math.pow(e.clientY - centerY, 2)
+            );
+            
+            // If mouse is within 300px of blob center, apply hover effect
+            if (distance < 300) {
+              blob.classList.add('blob-hovered');
+            } else {
+              blob.classList.remove('blob-hovered');
+            }
+          }, { passive: true });
+        }
       })();
     </script>
 </body>
