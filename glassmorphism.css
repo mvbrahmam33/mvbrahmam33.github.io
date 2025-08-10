@@ -24,9 +24,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
-.cards-grid{
-    display: grid;
-}
+
 
 /* Border gradient and highlight effects */
 .glass-card::before {
